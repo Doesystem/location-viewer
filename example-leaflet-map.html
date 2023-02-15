@@ -1,12 +1,18 @@
 <html>
     <head>
+		<title>Test Leaflet Map</title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+		
+		<style>
+            #map {
+                height: 360px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Test Map</h1>
+        <h1>Test Leaflet Map</h1>
         <div id="map"></div>
-        <div>--- END ---</div>
 
         <script>
             var map = L.map('map').setView([13.8480519, 100.3975684], 14);
@@ -19,11 +25,5 @@
                 .bindPopup('“ที่นี่”บ้านก๋วยเตี๋ยว')
                 .openPopup();
         </script>
-
-        <style>
-            #map {
-                height: 360px;
-            }
-        </style>
     </body>
 </html>
